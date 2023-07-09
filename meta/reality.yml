@@ -1,0 +1,446 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+ipv6: false
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: ""
+bind-address: "*"
+unified-delay: true
+profile:
+  store-selected: true
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  listen: 0.0.0.0:7874
+  nameserver:
+    - 8.8.8.8
+    - 1.0.0.1
+    - https://dns.google/dns-query
+  fallback:
+    - 1.1.1.1
+    - 8.8.4.4
+    - https://cloudflare-dns.com/dns-query
+    - 112.215.203.254
+  default-nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+    - 112.215.203.254
+proxies:
+  - name: REALITY|@Outline_Vpn|🚩|22.89
+    server: 49.13.48.213
+    port: 2053
+    type: vless
+    uuid: ec95100b-11b4-493f-8667-9f70dc63d7cd
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: www.speedtest.net
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "%40antifilterch"
+    udp: true
+  - name: REALITY|@prrofile_purple|🚩|23.17
+    server: join.melov2ray.store
+    port: 443
+    type: vless
+    uuid: d99089bc-4e76-4017-826f-ea33bd78bd93
+    cipher: auto
+    tls: false
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    servername: www.speedtest.net
+    udp: true
+  - name: REALITY|@WomanLifeFreedomVPN|🇫🇮|175.19
+    server: wlfspeedtest.wlftest.xyz
+    port: 443
+    type: vless
+    uuid: 85399fea-2ee3-51b5-ad4e-d8b78a2cf1d9
+    cipher: auto
+    tls: false
+    flow: xtls-rprx-vision-udp443
+    skip-cert-verify: true
+    servername: www.speedtest.net
+    udp: true
+  - name: REALITY|@UnlimitedDev|🇩🇪|176.96
+    server: bia-to5.unlimiteddev.xyz
+    port: 443
+    type: vless
+    uuid: 6f825c67-c764-4a6c-cac8-c4ad25186fbc
+    cipher: auto
+    tls: false
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    servername: discord.com
+    udp: true
+  - name: REALITY|@vmessorg|🇩🇪|510.17
+    server: join-bede1.vmessorg.fun
+    port: 443
+    type: vless
+    uuid: 4d34b1a0-3f28-40d3-cb7e-46870d3bb5dd
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: discord.com
+    udp: true
+  - name: REALITY|@v2rayNG_Matsuri|🇩🇪|126.87
+    server: 195.201.120.67
+    port: 1111
+    type: vless
+    uuid: a1244f89-07b6-475f-8df5-24ce0b5e8c57
+    cipher: auto
+    tls: false
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    servername: flutter.dev
+    udp: true
+  - name: REALITY|@ShadowProxy66|🇺🇸|48.29
+    server: 104.168.107.230
+    port: 443
+    type: vless
+    uuid: 0d8d950e-0962-4505-b5a0-b537d1e74967
+    cipher: auto
+    tls: false
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    servername: www.datadoghq.com
+    udp: true
+  - name: REALITY|@kiava|🇩🇪|167.61
+    server: srv2.kiava.fun
+    port: 443
+    type: vless
+    uuid: 5561b8e1-7bd7-4052-e241-bb1d49a152b7
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: aws.amazon.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "%40kiava-%40kiava-%40kiava"
+    udp: true
+  - name: REALITY|@PAINB0Y|🇩🇪|185.97
+    server: srv4.kiava.fun
+    port: 443
+    type: vless
+    uuid: 9915fa3b-f228-46a2-ab4f-5a67a12aa5db
+    cipher: auto
+    tls: false
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    servername: cdn.discordapp.com
+    udp: true
+  - name: REALITY|@VpnProSec|🇩🇪|141.98
+    server: for1.vpnprosec.shop
+    port: 2087
+    type: vless
+    uuid: 8e425129-950d-4316-ce5c-bb7e90c486ea
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: telewebion.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+    udp: true
+  - name: REALITY|@X_Her0|🇩🇪|188.61
+    server: main.xher0.de
+    port: 10888
+    type: vless
+    uuid: fa5f540c-5375-4e9f-bc50-81280c000743
+    cipher: auto
+    tls: false
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    servername: www.speedtest.net
+    udp: true
+  - name: REALITY|@INIT1984|🇨🇭|128.3
+    server: 38.180.15.115
+    port: 23074
+    type: vless
+    uuid: 51b24a75-ddca-49f8-a9e0-dc5f18ea61dd
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: www.zula.ir
+    udp: true
+  - name: REALITY|@CloudCityy|🇫🇮|142.57
+    server: 65.109.240.139
+    port: 8888
+    type: vless
+    uuid: 1f0a6d52-c717-4439-a2aa-b613a031428b
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: discord.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "%40CloudCityy"
+    udp: true
+  - name: REALITY|@DarkVPNpro|🇬🇧|147.68
+    server: 5.178.98.14
+    port: 2222
+    type: vless
+    uuid: 3bd48fa0-fa8a-4362-b70a-5c80b71fd36b
+    cipher: auto
+    tls: false
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    servername: s.pinimg.com
+    udp: true
+  - name: REALITY|@Proxy_PJ|🇩🇪|138.96
+    server: speedtest2.wlftest.xyz
+    port: 443
+    type: vless
+    uuid: 6c39add6-18b8-577c-9a9c-be2082507050
+    cipher: auto
+    tls: false
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    servername: www.speedtest.net
+    udp: true
+  - name: REALITY|@VmessProtocol|🇩🇪|126.79
+    server: 88.99.187.106
+    port: 443
+    type: vless
+    uuid: 40cd41f7-7c02-4e43-e430-5f73cbb7d8b4
+    cipher: auto
+    tls: false
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    servername: www.speedtest.net
+    udp: true
+  - name: REALITY|@ovpn2|🇨🇭|122.57
+    server: 193.168.144.46
+    port: 443
+    type: vless
+    uuid: cdb38f5b-12c3-414b-eacd-a635dc633701
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: mega.io
+    network: grpc
+    grpc-opts:
+      grpc-service-name: /
+    udp: true
+  - name: REALITY|@v2_team|🇩🇪|126.69
+    server: 88.99.187.106
+    port: 443
+    type: vless
+    uuid: 5c2afccd-054a-432b-a35b-0ecd6871f163
+    cipher: auto
+    tls: false
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    servername: www.speedtest.net
+    udp: true
+  - name: REALITY|@freeconfigv2|🇩🇪|120.55
+    server: 5.230.68.225
+    port: 443
+    type: vless
+    uuid: 7299122f-2a7d-4c7b-ba7b-bac5ad0c8b0d
+    cipher: auto
+    tls: false
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    servername: www.datadoghq.com
+    udp: true
+  - name: REALITY|@bright_vpn|🇩🇪|310.23
+    server: cdn13.yahoo.haami13.online
+    port: 443
+    type: vless
+    uuid: 72a28bef-3c0d-4134-843e-2708a94a5e9e
+    cipher: auto
+    tls: false
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    servername: www.yahoo.com
+    udp: true
+  - name: REALITY|@free1_vpn|🇩🇪|142.83
+    server: srv1.kiava.fun
+    port: 443
+    type: vless
+    uuid: 5561b8e1-7bd7-4052-e241-bb1d49a152b7
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: cdn.discordapp.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "%40kiava-%40kiava-%40kiava"
+    udp: true
+  - name: REALITY|@fnet00|🇫🇷|116.01
+    server: 172.232.44.54
+    port: 13195
+    type: vless
+    uuid: cc629a95-e876-4a93-b0f4-4e5104782613
+    cipher: auto
+    tls: false
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    servername: www.speedtest.net
+    udp: true
+  - name: REALITY|@V2pedia|🇩🇪|171.15
+    server: te.argha-v2pedia.monster
+    port: 443
+    type: vless
+    uuid: f0e81233-9183-456a-bd4d-6099b341cbfb
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: ""
+    network: grpc
+    grpc-opts:
+      grpc-service-name: Telegram%3A%40v2pedia%2CTelegram%3A%40v2pedia%E2%80%A6
+    udp: true
+  - name: REALITY|@molovpn|🇳🇱|229.68
+    server: 194.116.215.93
+    port: 443
+    type: vless
+    uuid: e80afda1-3b34-44be-a2d4-569ce3f880ac
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: www.speedtest.net
+    udp: true
+  - name: REALITY|@melov2ray|🇩🇪|130.9
+    server: irc.melov2ray.shop
+    port: 2095
+    type: vless
+    uuid: 41ffe1e6-ff9f-4586-8ce6-b5c31d437e18
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: ftp.debian.org
+    udp: true
+proxy-groups:
+  - name: MANUAL
+    type: select
+    proxies:
+      - REALITY|@Outline_Vpn|🚩|22.89
+      - REALITY|@prrofile_purple|🚩|23.17
+      - REALITY|@WomanLifeFreedomVPN|🇫🇮|175.19
+      - REALITY|@UnlimitedDev|🇩🇪|176.96
+      - REALITY|@vmessorg|🇩🇪|510.17
+      - REALITY|@v2rayNG_Matsuri|🇩🇪|126.87
+      - REALITY|@ShadowProxy66|🇺🇸|48.29
+      - REALITY|@kiava|🇩🇪|167.61
+      - REALITY|@PAINB0Y|🇩🇪|185.97
+      - REALITY|@VpnProSec|🇩🇪|141.98
+      - REALITY|@X_Her0|🇩🇪|188.61
+      - REALITY|@INIT1984|🇨🇭|128.3
+      - REALITY|@CloudCityy|🇫🇮|142.57
+      - REALITY|@DarkVPNpro|🇬🇧|147.68
+      - REALITY|@Proxy_PJ|🇩🇪|138.96
+      - REALITY|@VmessProtocol|🇩🇪|126.79
+      - REALITY|@ovpn2|🇨🇭|122.57
+      - REALITY|@v2_team|🇩🇪|126.69
+      - REALITY|@freeconfigv2|🇩🇪|120.55
+      - REALITY|@bright_vpn|🇩🇪|310.23
+      - REALITY|@free1_vpn|🇩🇪|142.83
+      - REALITY|@fnet00|🇫🇷|116.01
+      - REALITY|@V2pedia|🇩🇪|171.15
+      - REALITY|@molovpn|🇳🇱|229.68
+      - REALITY|@melov2ray|🇩🇪|130.9
+      - LOAD-BALANCE
+      - BEST-PING
+      - FALLBACK
+      - DIRECT
+  - name: LOAD-BALANCE
+    type: load-balance
+    strategy: consistent-hashing
+    url: http://hi.bonds.id/ping
+    interval: 300
+    proxies:
+      - REALITY|@Outline_Vpn|🚩|22.89
+      - REALITY|@prrofile_purple|🚩|23.17
+      - REALITY|@WomanLifeFreedomVPN|🇫🇮|175.19
+      - REALITY|@UnlimitedDev|🇩🇪|176.96
+      - REALITY|@vmessorg|🇩🇪|510.17
+      - REALITY|@v2rayNG_Matsuri|🇩🇪|126.87
+      - REALITY|@ShadowProxy66|🇺🇸|48.29
+      - REALITY|@kiava|🇩🇪|167.61
+      - REALITY|@PAINB0Y|🇩🇪|185.97
+      - REALITY|@VpnProSec|🇩🇪|141.98
+      - REALITY|@X_Her0|🇩🇪|188.61
+      - REALITY|@INIT1984|🇨🇭|128.3
+      - REALITY|@CloudCityy|🇫🇮|142.57
+      - REALITY|@DarkVPNpro|🇬🇧|147.68
+      - REALITY|@Proxy_PJ|🇩🇪|138.96
+      - REALITY|@VmessProtocol|🇩🇪|126.79
+      - REALITY|@ovpn2|🇨🇭|122.57
+      - REALITY|@v2_team|🇩🇪|126.69
+      - REALITY|@freeconfigv2|🇩🇪|120.55
+      - REALITY|@bright_vpn|🇩🇪|310.23
+      - REALITY|@free1_vpn|🇩🇪|142.83
+      - REALITY|@fnet00|🇫🇷|116.01
+      - REALITY|@V2pedia|🇩🇪|171.15
+      - REALITY|@molovpn|🇳🇱|229.68
+      - REALITY|@melov2ray|🇩🇪|130.9
+  - name: BEST-PING
+    type: url-test
+    url: http://hi.bonds.id/ping
+    interval: 300
+    tolerance: 50
+    proxies:
+      - REALITY|@Outline_Vpn|🚩|22.89
+      - REALITY|@prrofile_purple|🚩|23.17
+      - REALITY|@WomanLifeFreedomVPN|🇫🇮|175.19
+      - REALITY|@UnlimitedDev|🇩🇪|176.96
+      - REALITY|@vmessorg|🇩🇪|510.17
+      - REALITY|@v2rayNG_Matsuri|🇩🇪|126.87
+      - REALITY|@ShadowProxy66|🇺🇸|48.29
+      - REALITY|@kiava|🇩🇪|167.61
+      - REALITY|@PAINB0Y|🇩🇪|185.97
+      - REALITY|@VpnProSec|🇩🇪|141.98
+      - REALITY|@X_Her0|🇩🇪|188.61
+      - REALITY|@INIT1984|🇨🇭|128.3
+      - REALITY|@CloudCityy|🇫🇮|142.57
+      - REALITY|@DarkVPNpro|🇬🇧|147.68
+      - REALITY|@Proxy_PJ|🇩🇪|138.96
+      - REALITY|@VmessProtocol|🇩🇪|126.79
+      - REALITY|@ovpn2|🇨🇭|122.57
+      - REALITY|@v2_team|🇩🇪|126.69
+      - REALITY|@freeconfigv2|🇩🇪|120.55
+      - REALITY|@bright_vpn|🇩🇪|310.23
+      - REALITY|@free1_vpn|🇩🇪|142.83
+      - REALITY|@fnet00|🇫🇷|116.01
+      - REALITY|@V2pedia|🇩🇪|171.15
+      - REALITY|@molovpn|🇳🇱|229.68
+      - REALITY|@melov2ray|🇩🇪|130.9
+  - name: FALLBACK
+    type: fallback
+    url: http://hi.bonds.id/ping
+    interval: 300
+    proxies:
+      - REALITY|@Outline_Vpn|🚩|22.89
+      - REALITY|@prrofile_purple|🚩|23.17
+      - REALITY|@WomanLifeFreedomVPN|🇫🇮|175.19
+      - REALITY|@UnlimitedDev|🇩🇪|176.96
+      - REALITY|@vmessorg|🇩🇪|510.17
+      - REALITY|@v2rayNG_Matsuri|🇩🇪|126.87
+      - REALITY|@ShadowProxy66|🇺🇸|48.29
+      - REALITY|@kiava|🇩🇪|167.61
+      - REALITY|@PAINB0Y|🇩🇪|185.97
+      - REALITY|@VpnProSec|🇩🇪|141.98
+      - REALITY|@X_Her0|🇩🇪|188.61
+      - REALITY|@INIT1984|🇨🇭|128.3
+      - REALITY|@CloudCityy|🇫🇮|142.57
+      - REALITY|@DarkVPNpro|🇬🇧|147.68
+      - REALITY|@Proxy_PJ|🇩🇪|138.96
+      - REALITY|@VmessProtocol|🇩🇪|126.79
+      - REALITY|@ovpn2|🇨🇭|122.57
+      - REALITY|@v2_team|🇩🇪|126.69
+      - REALITY|@freeconfigv2|🇩🇪|120.55
+      - REALITY|@bright_vpn|🇩🇪|310.23
+      - REALITY|@free1_vpn|🇩🇪|142.83
+      - REALITY|@fnet00|🇫🇷|116.01
+      - REALITY|@V2pedia|🇩🇪|171.15
+      - REALITY|@molovpn|🇳🇱|229.68
+      - REALITY|@melov2ray|🇩🇪|130.9
+rules:
+  - MATCH,MANUAL
