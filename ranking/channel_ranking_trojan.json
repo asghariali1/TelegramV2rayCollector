@@ -1,13 +1,14 @@
 {
-    "date": "2023-07-18 00:45:55",
+    "date": "2023-07-18 01:44:38",
     "points": {
-        "oneclickvpnkeys": 9,
-        "ovpn2": 9,
+        "oneclickvpnkeys": 18,
+        "ovpn2": 18,
+        "vpn_tehran": 9,
+        "PrivateVPNs": 6,
+        "DirectVPN": 6,
+        "V2RayTz": 6,
         "v2ray1_ng": 4,
-        "vpn_tehran": 4,
-        "PrivateVPNs": 3,
-        "DirectVPN": 3,
-        "V2RayTz": 3,
-        "yaney_01": 1
+        "vmess_vless_v2rayng": 3,
+        "yaney_01": 2
     }
 }
