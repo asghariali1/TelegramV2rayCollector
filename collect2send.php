@@ -2,8 +2,8 @@
 
 function create_url()
 {
-    $data = json_decode(file_get_contents("./sub/mix_base64"), true);
-    $url = "";
+    $data = json_decode(file_get_contents("https://raw.githubusercontent.com/asghariali1/TelegramV2rayCollector/main/sub/mix_base64"), true);
+    $url = "https://raw.githubusercontent.com/asghariali1/TelegramV2rayCollector/main/sub/mix_base64";
     foreach ($data as $key => $value) {
         if ($key === "worker") {
             $url = "https://" . $value;
