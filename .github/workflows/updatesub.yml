@@ -20,6 +20,7 @@ jobs:
           
       - name: Execute PHP script
         run: |
+          git pull
           php collect2send.php
           git config --global user.email "workersub@gmail.com"
           git config --global user.name "workersub"
