@@ -22,9 +22,6 @@ jobs:
         run: |
           php collect2send.php
           git pull
-          git config --global user.email "workersub@gmail.com"
-          git config --global user.name "workersub"
-          git config credential.helper store"
           git push -f
       
       - name: send created sub
