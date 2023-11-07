@@ -1,9 +1,10 @@
 {
-    "date": "2023-11-06 04:33:58",
+    "date": "2023-11-07 04:33:54",
     "points": {
+        "VmessProtocol": 7,
         "PrivateVPNs": 3,
         "DirectVPN": 3,
-        "oneclickvpnkeys": 2,
-        "VmessProtocol": 2
+        "vmess_vless_v2rayng": 3,
+        "oneclickvpnkeys": 1
     }
 }
