@@ -1,7 +1,11 @@
 {
-    "date": "2025-01-03 04:49:37",
+    "date": "2025-01-04 04:48:06",
     "points": {
+        "VmessProtocol": 9,
         "PrivateVPNs": 3,
+        "DirectVPN": 3,
+        "ConfigsHUB": 2,
+        "v2ray1_ng": 1,
         "ovpn2": 1,
         "vpn_tehran": 1
     }
