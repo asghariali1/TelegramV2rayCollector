@@ -1,11 +1,12 @@
 {
-    "date": "2026-02-17 05:39:05",
+    "date": "2026-02-18 05:43:00",
     "points": {
+        "oneclickvpnkeys": 9,
         "vpn_tehran": 9,
-        "oneclickvpnkeys": 3,
+        "PrivateVPNs": 3,
+        "DirectVPN": 3,
         "vmess_vless_v2rayng": 3,
-        "PrivateVPNs": 2,
-        "DirectVPN": 2,
+        "NetAccount": 1,
         "v2ray1_ng": 1,
         "ovpn2": 1
     }
